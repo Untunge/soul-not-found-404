@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "<% name %>",
+  "name": "soul-not-found-404",
   "version": "0.0.0",
   "license": "BSD-3-Clause",
   "type": "module",
@@ -13,7 +13,7 @@
     "login": "devvit login",
     "prettier": "prettier --write .",
     "test:types": "tsc --build",
-    "test:unit": "node --experimental-strip-types --no-warnings=ExperimentalWarning --test \"src/**/*.test.ts\""
+    "test:unit": "npm run test:types && node --test \"dist/types/shared/**/*.test.js\""
   },
   "engines": {
     "node": ">=24.0.0"
